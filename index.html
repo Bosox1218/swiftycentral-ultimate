@@ -1,82 +1,112 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwiftyCentral - Find Your Era & Shop Exclusive Merch</title>
-    <meta name="description" content="Discover which Taylor Swift era defines you, take the ultimate Swiftie quiz, and shop exclusive era-themed merch with deals from Temu and AliExpress.">
-    <meta name="keywords" content="Taylor Swift, Swiftie, SwiftyCentral, Swiftie quiz, Era quiz, Temu Taylor Swift, AliExpress Swiftie Merch, Taylor Swift gifts">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>SwiftyCentral</h1>
-        <p>✨ Take the Quiz. Find Your Era. Shop Your Vibe. ✨</p>
-        <a href="#quiz" class="cta-button">Start the Quiz</a>
-        <a href="#shop" class="cta-button">Shop Now</a>
-        <a href="#subscribe" class="cta-button">Get 20% Off</a>
-    </header>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Taylor Swift Merch Demo</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+        <style>
+    body {
+        font-family: 'Cormorant Garamond', serif;
+        background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center fixed;
+        background-size: cover;
+        color: #2e2e2e;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 2em;
+        text-align: center;
+        box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+    table {
+        width: 90%;
+        margin: 2em auto;
+        border-collapse: collapse;
+        background-color: rgba(255,255,255,0.95);
+        box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+    }
+    th, td {
+        padding: 1em;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+    }
+    th {
+        background-color: #e6d6f5;
+    }
+    img {
+        max-width: 100px;
+        border-radius: 8px;
+    }
+    .music-player {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+</style>
+    </head>
+    <body>
+        <header><h1>Taylor Swift Merch Demo</h1></header>
+        
+<div class="music-player">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4R2kfaDFhslZEMJqAFNpdd?utm_source=generator" 
+    width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
+    fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
 
-    <main>
-        <section id="quiz">
-            <h2>Which Taylor Swift Era Are You?</h2>
-            <p>Uncover your inner Taylor—then shop curated merch that matches your vibe.</p>
-            <iframe src="quiz.html" width="100%" height="400" style="border:none;"></iframe>
-        </section>
-
-        <section id="subscribe">
-            <h2>💌 Join Our Swiftie List & Get 20% Off</h2>
-            <form action="https://formspree.io/f/mexample" method="POST">
-                <input type="email" name="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
-
-        <section id="shop">
-            <h2>🛍️ Featured Swiftie Merch (Marked up 40% from Temu/AliExpress)</h2>
-            <div class="product-gallery">
-                <div class="product">
-                    <img src="images/lover_shirt.jpg" alt="Lover Era Shirt">
-                    <p>Lover Era Shirt - $23.99</p>
-                    <button>Buy Now</button>
-                </div>
-                <div class="product">
-                    <img src="images/reputation_ring.jpg" alt="Reputation Snake Ring">
-                    <p>Reputation Snake Ring - $13.99</p>
-                    <button>Buy Now</button>
-                </div>
-                <div class="product">
-                    <img src="images/folklore_blanket.jpg" alt="Folklore Blanket">
-                    <p>Folklore Cozy Blanket - $32.99</p>
-                    <button>Buy Now</button>
-                </div>
-                <div class="product">
-                    <img src="images/1989_sunglasses.jpg" alt="1989 Sunglasses">
-                    <p>1989 Era Sunglasses - $17.99</p>
-                    <button>Buy Now</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="eras">
-            <h2>🎤 Explore Every Era</h2>
-            <ul>
-                <li><a href="lover.html">Lover</a></li>
-                <li><a href="reputation.html">Reputation</a></li>
-                <li><a href="folklore.html">Folklore</a></li>
-                <li><a href="evermore.html">Evermore</a></li>
-                <li><a href="midnights.html">Midnights</a></li>
-                <li><a href="red.html">Red</a></li>
-                <li><a href="speaknow.html">Speak Now</a></li>
-                <li><a href="fearless.html">Fearless</a></li>
-                <li><a href="debut.html">Taylor Swift</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 SwiftyCentral. Not affiliated with Taylor Swift or her label. Prices reflect 40% markup on supplier items for sustainability.</p>
-    </footer>
-</body>
-</html>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Image URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Taylor Swift Eras Tour T-Shirt</td>
+      <td>$19.99</td>
+      <td>https://example.com/images/eras-tour-shirt.jpg</td>
+    </tr>
+    <tr>
+      <td>Folklore Album Hoodie</td>
+      <td>$39.99</td>
+      <td>https://example.com/images/folklore-hoodie.jpg</td>
+    </tr>
+    <tr>
+      <td>Midnights Vinyl Record</td>
+      <td>$29.99</td>
+      <td>https://example.com/images/midnights-vinyl.jpg</td>
+    </tr>
+    <tr>
+      <td>Reputation Snake Ring</td>
+      <td>$12.99</td>
+      <td>https://example.com/images/reputation-ring.jpg</td>
+    </tr>
+    <tr>
+      <td>1989 Polaroid Set</td>
+      <td>$14.99</td>
+      <td>https://example.com/images/1989-polaroids.jpg</td>
+    </tr>
+    <tr>
+      <td>Lover Heart Sunglasses</td>
+      <td>$9.99</td>
+      <td>https://example.com/images/lover-sunglasses.jpg</td>
+    </tr>
+    <tr>
+      <td>Red Scarf Replica</td>
+      <td>$11.99</td>
+      <td>https://example.com/images/red-scarf.jpg</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    
