@@ -1,91 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Swifty Central</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Playfair Display', serif;
-            text-align: center;
-            background: url('https://images.unsplash.com/photo-1511401139252-b3a9c47f9a3c?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-            background-size: cover;
-            color: #ffffff;
-        }
-
-        .overlay {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 80px 20px;
-            min-height: 100vh;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 6px #000;
-        }
-
-        p {
-            font-size: 1.6em;
-            margin-bottom: 30px;
-            text-shadow: 1px 1px 3px #000;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { opacity: 0.7; }
-            50% { opacity: 1; }
-            100% { opacity: 0.7; }
-        }
-
-        a.button {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            color: white;
-            background-color: #a64ca6;
-            text-decoration: none;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px #333;
-            transition: 0.3s;
-        }
-
-        a.button:hover {
-            background-color: #c271c2;
-            transform: scale(1.05);
-        }
-
-        .fixed-shop {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-        }
-
-        audio {
-            display: none;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiftie Merch Store - Taylor Swift Inspired</title>
+    <meta name="description" content="Shop Taylor Swift-inspired merchandise! Find hoodies, jewelry, and more for Swifties. Fast shipping, high quality.">
+    <meta name="keywords" content="Taylor Swift merch, Swiftie gifts, Taylor Swift apparel, Swiftie store">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="fixed-shop">
-        <a href="product.html" class="button">Shop Now</a>
-    </div>
-    <div class="overlay">
-        <h1>Welcome Home. Welcome to Swifty Central.</h1>
-        <p>Do you really wanna know where I was April 29th?</p>
-        <div>
-            <a href="product.html" class="button">Yes</a>
-            <a href="product.html" class="button">No</a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/collections/apparel">Apparel</a></li>
+                <li><a href="/collections/accessories">Accessories</a></li>
+                <li><a href="/collections/home-decor">Home Decor</a></li>
+                <li><a href="/blogs/swiftie-news">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to the Swiftie Merch Store!</h1>
+            <p>Shop Taylor Swift-inspired goodies for every era.</p>
+            <a href="/collections/all" class="cta-button">Shop Now</a>
         </div>
-    </div>
-    <audio autoplay loop>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    </header>
+    <section class="featured-products">
+        <h2>Featured Swiftie Picks</h2>
+        <div class="product-carousel" id="productCarousel">
+            <!-- Products populated by JavaScript -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Swiftie Merch Store. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
